@@ -1,0 +1,36 @@
+{
+    "name": "delahaye/dlh_replacetablerecord",
+    "description":"Extension that allows overwriting existing table records by using standard generator forms",
+    "keywords":["contao", "forms", "editing"],
+    "type": "contao-module",
+    "homepage":"https://github.com/delahaye/dlh_replacetablerecord",
+    "license":"LGPL-3.0+",
+    "authors":[
+        {
+            "name":"Christian de la Haye",
+            "email":"service@delahaye.de",
+            "homepage":"http://www.delahaye.de",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "issues":"https://github.com/delahaye/dlh_replacetablerecord/issues"
+    },
+    "require": {
+        "contao/core": ">=3.3,<4-dev",
+        "contao-community-alliance/composer-installer": "*"
+    },
+    "autoload": {
+        "classmap": [""]
+    },
+    "replace": {
+        "contao-legacy/dlh_replacetablerecord": "*"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/dlh_replacetablerecord"
+            }
+        }
+    }
+}
